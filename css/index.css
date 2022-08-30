@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+  --roboto: 'Roboto';
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header */
+
+.header-bg {
+  background: var(--purple-bg);
+  height: 587px;
+  position: relative;
+}
+
+.header-bg::after {
+  content: '';
+  display: block;
+  background-color: var(--green);
+  width: 100vw;
+  height: 6px;
+  position: absolute;
+  left: 0;
+  top: 585px;
+}
+
+.header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 64px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.header-menu a {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#weight {
+  font-weight: 700;
+}
+
+#weight::before {
+  content: '';
+  display: block;
+  background-color: var(--green);
+  width: 17px;
+  height: 2px;
+  position: absolute;
+  top: 87px;
+  left: 715px;
+  transform: rotate(90deg);
+}
+
+.header-input input {
+  border: none;
+  background-color: var(--dark-bg);
+  width: 230px;
+  height: 40px;
+  border-radius: 4px 0 0 4px;
+  color: var(--light-purple);
+  padding: 25px;
+}
+
+/* Imagem de busca */
+label img {
+  position: absolute;
+  left: 1542px;
+  top: 76px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Retangulo da busca */
+label::before {
+  content: '';
+  display: block;
+  background-color: var(--button-bg);
+  width: 70px;
+  height: 49px;
+  position: absolute;
+  left: 1518px;
+  top: 64px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Pinta as letras do input */
+input::placeholder {
+  color: var(--light-purple);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Retira a borda do input */
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+/* Home */
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+.home p {
+  grid-column: 1;
+}
+
+.home-veja {
+  grid-column: 1;
+}
+
+.home-text h1 {
+  color: var(--button-bg);
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-text p {
+  color: var(--light-purple);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 16px;
+  line-height: 27px;
+}
+
+.home-veja {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 24px;
+}
+
+.home-veja a {
+  color: var(--button-bg);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-img {
+  margin-left: 100px;
+}
+
+/* Main */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 60px;
+  justify-content: start;
+  align-items: top;
+}
+
+.coluna-2 {
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: 130px;
+}
+
+.figure-1 {
+  margin: 0;
+}
+
+#data {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 16px;
+}
+
+.main-text {
+  max-width: 570px;
+  margin-top: 16px;
+}
+
+.main-text h2 {
+  color: var(--purple-bg);
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.main-text p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+hr {
+  margin-top: 24px;
+  border: none;
+  background: #f2e7fa;
+  height: 1px;
+}
+
+/* Section */
+
+section {
+  margin-bottom: 67px;
+}
+
+.sessao {
+  display: flex;
+
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 63px;
+}
